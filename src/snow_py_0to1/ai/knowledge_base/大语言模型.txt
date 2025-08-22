@@ -1,0 +1,10 @@
+[PDF内容模拟]
+
+        大型语言模型(LLM)是基于Transformer架构的深度学习模型。
+        这些模型在大量文本数据上训练，可以生成类人文本、翻译语言、回答问题和总结文档。
+
+        ### 知名模型
+        - GPT系列 (OpenAI)
+        - LLaMA (Meta)
+        - Gemini (Google)
+        - Qwen (阿里)

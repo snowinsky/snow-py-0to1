@@ -17,7 +17,7 @@ from langchain_community.document_loaders import PyPDFLoader, TextLoader
 load_dotenv()
 
 
-class ModelAdapter:
+class LargeLanguageModelAdapter:
     """通用大模型适配器，支持多种大模型无缝切换"""
 
     def __init__(self, model_name="openai"):
@@ -223,8 +223,8 @@ class RAGSystem:
             embedding_model: 嵌入模型 (目前仅 openai 支持专用嵌入API)
         """
         # 初始化模型
-        self.llm_adapter = ModelAdapter(llm_model)
-        self.embedding_adapter = ModelAdapter(embedding_model)
+        self.llm_adapter = LargeLanguageModelAdapter(llm_model)
+        self.embedding_adapter = LargeLanguageModelAdapter(embedding_model)
 
         # 向量存储系统
         self.vector_store = None
